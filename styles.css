@@ -3,11 +3,11 @@
 }
 
 html {
-    min-height: 100vh;
+    height: 100%;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
@@ -89,4 +89,31 @@ input[type="text"] {
     padding: 2px;
     border-radius: 10px;
     border: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: max-content max-content;
+}
+
+.cards > * {
+    margin: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card {
+    
+    background-color: white;
+    margin: .5rem;
+}
+
+.announcements, .trending {
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
 }
